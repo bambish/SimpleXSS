@@ -23,20 +23,20 @@ mv SimpleXSS/index.php /var/www/html
 ```
 
 ### Usage
-- Basic usage: **cookies=**12345&**arg=**67890
+* Basic usage: **cookies**=12345&**arg**=67890
 ```http
 http://127.0.0.1/index.php?cookies=12345&arg=67890
 ```
 You can use every `arbitrary args name`
 
-- Dynamic redirection: **redirect=**http://arbitrarywebsite.com/
+* Dynamic redirection: **redirect**=http://arbitrarywebsite.com/
 ```http
 http://127.0.0.1/index.php?cookies=12345&arbitraryarg=67890&redirect=http://github.com/
 ```
 You can `change or disable` the `default redirection` by editing or comment `$staticredirection` var in `index.php`
 You can force the static redirection if you set `$allowgetredirection` to false in index.php
 
-- Write in specific dump file: **dumpfile=**arbitraryfile.txt
+* Write in specific dump file: **dumpfile**=arbitraryfile.txt
 ```http
 http://127.0.0.1/index.php?cookies=12345&arbitraryarg=67890&dumpfile=arbitraryfile.txt
 ```
