@@ -12,7 +12,7 @@ Simple index.php template to perform XSS attack.
 * PHP
 
 ### Installing
-`In this guide I'm using apache2 on Debian 9. Obviously, you can use every web server and distro you want.`
+In this guide I'm using apache2 on Debian 9. Obviously, you can use every web server and distro you want.
 
 **1.** Install apache2 and php
 ```bash
