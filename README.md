@@ -12,16 +12,28 @@ Simple index.php template to perform XSS attack.
 * PHP
 
 ### Installing
-**1.** Get the sources
+`In this guide I'm using apache2 on Debian 9. Obviously, you can use every web server and distro you want.`
+
+**1.** Install apache2 and php
+```bash
+apt install apache2 php
+```
+
+**2.** Get the sources
 ```bash
 git clone https://github.com/bambish/SimpleXSS
 ```
 
-**2.** Move index.php in the web server root dir.
+**3.** Move index.php in the web server root dir
 ```bash
 mv SimpleXSS/index.php /var/www/html
 ```
-*Adapt the path if you don't use apache2*
+
+**4.** Set the access right to write dump files
+```bash
+chown root:www-data /var/www/html
+chmod g+w /var/www/html
+```
 
 ### Usage
 * Basic usage: **cookies**=12345&**arg**=67890
